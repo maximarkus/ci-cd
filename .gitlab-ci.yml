@@ -59,7 +59,7 @@ before_script:
 Test SSH:
   script:
     # try to connect to your aws server
-    - scp index.html ec2-user@ec2-3-142-208-166.us-east-2.compute.amazonaws.com:/home/ec2-user/www
+    - scp index.html ec2-user@ec2-3-142-208-166.us-east-2.compute.amazonaws.com:/var/www
 
     # try to clone yourself. A *PUBLIC* key paired to the SSH_PRIVATE_KEY was added as deploy key to this repository
     - touch test.md
